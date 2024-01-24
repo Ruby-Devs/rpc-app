@@ -1,4 +1,4 @@
-// index.js
+// Code made by MubiLop from Ruby Team
 const WebSocket = require('ws');
 
 console.log("Ruby Devs Technology | Made by MubiLop")
@@ -32,7 +32,7 @@ function startWebSocketServer() {
 
   function updateDiscordRPC(applicationId, rpcData) {
     if (rpcData.state || rpcData.details) {
-        (new (require("easy-presence").EasyPresence)("1160723200943071232")).setActivity({
+        (new (require("easy-presence").EasyPresence)(applicationId)).setActivity({
             details: rpcData.details || undefined,
             state: rpcData.state || undefined,
             assets: rpcData.assets || undefined,
